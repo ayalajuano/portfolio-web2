@@ -1,0 +1,665 @@
+
+	/*----------------------------------------------box sizing---------------------------------*/
+	
+	html {
+		box-sizing: border-box;
+	}
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+	/*-------------------------------------------------------------------------------*/
+	
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	/*-------------------------------------------------------------------------------*/
+	
+	body {
+		margin: 0 auto;
+		height: 1200px;
+		background-color: #bfbfbf;
+	}
+	nav {
+		background-color: #ffffff;
+		width: 100%;
+	}
+	/*---------------------------------nav----------------------------------------------*/
+	
+	#navbar h1 {
+		float: left;
+		padding-top: 20px;
+	}
+	#navbar ul {
+		padding: 20px;
+	}
+	#navbar ul li {
+		display: block;
+		margin-right: 40px;
+		float: right;
+		list-style: none;
+		color: white;
+	}
+	#navbar {
+		background: -webkit-linear-gradient(#192c3b, #041119);
+		/* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#192c3b, #041119);
+		/* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#192c3b, #041119);
+		/* For Firefox 3.6 to 15 */
+		background: linear-gradient(#192c3b, #041119);
+		/* Standard syntax */
+		height: 57px;
+	}
+	a:link {
+		color: white;
+		text-decoration: none;
+	}
+	a:visited {
+		color: white;
+		text-decoration: none;
+	}
+	/*---------------------------------slider----------------------------------------------*/
+	
+	#logobanner {
+		float: left;
+		margin: 6px 10px 0px 17px;
+	}
+	#logobanner img {
+		width: 58%;
+	}
+	#newstittle {
+		height: 35px;
+		background-color: black;
+		text-align: center;
+		color: white;
+		font-size: 20px;
+		line-height: 35px;
+	}
+	#infobar {
+		position: relative;
+		z-index: 1;
+		float: left;
+		margin-top: 400px;
+		text-align: center;
+		color: white;
+		font-size: 40px;
+		background-color: rgba(13, 22, 30, 0.5);
+		border-top-right-radius: 40px;
+		border-bottom-right-radius: 40px;
+		padding: 20px;
+	}
+	#peoplebar {
+		height: 215px;
+		background-color: white;
+		background: -webkit-radial-gradient( bottom right 60%, closest-side, black, #192c3b);
+		/* Safari 5.1 to 6.0 */
+		background: -o-radial-gradient(right bottom 60%, closest-side, black, #192c3b);
+		/* For Opera 11.6 to 12.0 */
+		background: -moz-radial-gradient(right bottom 60%, closest-side, black, #192c3b);
+		/* For Firefox 3.6 to 15 */
+		background: radial-gradient(at bottom right 60%, black, #192c3b);
+		/* Standard syntax (must be last) */
+	}
+	.container {
+		width: 100%;
+		max-width: 1020px;
+		margin: 0 auto;
+	}
+	.circle {
+		float: left;
+		height: 130px;
+		width: 130px;
+		border-radius: 70px;
+		font-size: 10px;
+		background-color: black;
+	}
+	.image1designer {
+		background-image: url(../images/thumbs/thumb1.jpg);
+	}
+	.image2designer {
+		background-image: url(../images/thumbs/thumb2.jpg);
+	}
+	.image3designer {
+		background-image: url(../images/thumbs/thumb3.jpg);
+	}
+	.image4designer {
+		background-image: url(../images/thumbs/thumb4.jpg);
+	}
+	.designerbox{
+	    height: 150px;
+    width: 150px;
+    float: left;
+    margin-left: 82px;
+        margin-top: 29px;
+
+	}
+
+	#names {
+		clear: both;
+		float: left;
+	}
+	#names p {
+		float: left;
+	}
+	#peoplebar p {
+		font-size: 13px;
+		color: white;
+		text-align: center;
+		line-height: 30px;
+	}
+	#bookingbar {
+		background-color: black;
+		background: -webkit-radial-gradient( top right 20%, closest-side, #192c3b, #0f212f, #041119);
+		/* Safari 5.1 to 6.0 */
+		background: -o-radial-gradient(right top 20%, closest-side, #192c3b, #0f212f, #041119);
+		/* For Opera 11.6 to 12.0 */
+		background: -moz-radial-gradient(right top 20%, closest-side, #192c3b, #0f212f, #041119);
+		/* For Firefox 3.6 to 15 */
+		background: radial-gradient(at top right 20%, #192c3b, #0f212f, #041119);
+		/* Standard syntax (must be last) */
+	}
+	#bookingbar h2 {
+		font-size: 42px;
+		padding-top: 30px;
+		color: white;
+		text-align: center;
+	}
+	
+	#forms {
+    float: left;
+	padding: 43% 10.3%;
+	}
+	
+	#boxforms{
+	width: 40%;
+	}
+	
+	.textbox {
+		float: left;
+		padding: 20px;
+		width: 200px;
+		text-align: center;
+	}
+	.inputbigger {
+		margin-left: 65px;
+		width: 190px;
+	}
+	.inputsmaller {
+		height: 34px;
+		width: 150px;
+	}
+	.floatright {
+		float: right;
+	}
+	.floatleft {
+		float: left;
+	}
+	#forms input {
+		margin-top: 15px;
+		height: 35px;
+	}
+	#forms button {
+		float: right;
+		width: 150px;
+		height: 35px;
+		margin-top: 15px;
+		background-color: #59a8a2;
+		border-radius: 5px;
+		border: 1px solid #59a8a2;
+		color: white;
+	}
+	
+	#socialnetworkpanel {
+		float: right;
+		width: 60%;
+	}
+	#socialnetworkpanel img{
+	    width: 240px;
+		    float: left;
+	}
+	
+	#tweettext{
+		   float: right;
+	}
+	#tweet{
+	position:relative;
+	padding-top: 30px;
+	}
+	
+	#twitter{
+	position: absolute;
+    z-index: 1;
+	top: 85px;
+    width: 212px;
+    height: 376px;
+    border-radius: 3px;
+    left: 15px;
+	background-image: url(../images/twitter.jpg);
+}
+
+	.bluebig {
+		color: #59a8a2;
+		font-size: 30px;
+	}
+	.whitesmall {
+		color: white;
+		font-size: 19px;
+		margin-top: 20px;
+	}
+	.whitebig {
+		color: white;
+		font-size: 30px;
+	}
+	#bookingbar .textbox {
+		margin-top: 230px;
+		margin-left: 40px
+	}
+
+	.designer-even {
+		background-color: aqua;
+		background: -webkit-linear-gradient(#26615d, #59a8a2);
+		/* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#26615d, #59a8a2);
+		/* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#26615d, #59a8a2);
+		/* For Firefox 3.6 to 15 */
+		background: linear-gradient(#26615d, #59a8a2);
+		/* Standard syntax */
+	}
+	.designer-even .designerinfo { float: right;}
+	.designer-odd .designerinfo { float: left;}
+	.designer-odd {
+		background-color: aqua;
+		background: -webkit-linear-gradient(#192c3b, #041119);
+		/* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#192c3b, #041119);
+		/* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#192c3b, #041119);
+		/* For Firefox 3.6 to 15 */
+		background: linear-gradient(#192c3b, #041119);
+		/* Standard syntax */
+	}
+	.designerfloatright {
+		float: right;
+		width: 40%;
+	}
+	.designerfloatleft {
+		float: left;
+		width: 40%;
+	}
+	
+	.designerpanel { padding: 30px;}
+	.designerinfo {
+		text-align: center;
+		width: 56%;
+		padding: 10% 10% 0;
+	}
+
+	.designerpanel img { width: 100%;}
+
+	.imagstyle {
+		border-radius: 50px;
+		border: 8px solid white;
+		background-color: black;
+	}
+	.imagstyle2 {
+		border-radius: 50px;
+		border: 8px solid white;
+		background-color: black;
+	}
+	
+	#aboutus {
+		background-color: brown;
+		min-height: 500px;
+		background: -webkit-linear-gradient(#26615d, #59a8a2);
+		/* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#26615d, #59a8a2);
+		/* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#26615d, #59a8a2);
+		/* For Firefox 3.6 to 15 */
+		background: linear-gradient(#26615d, #59a8a2);
+		/* Standard syntax */
+	}
+	.mapwindow {
+		position: relative;
+	}
+	.mapfloat {
+		width: 60%;
+		float: right;
+		position: relative;
+	}
+	.mapsection {
+		padding: 10% 0 0 30px;
+	}
+	
+	
+	#aboutus iframe {
+		position: absolute;
+		z-index: 1;
+		right: 60px;
+		top: 80px;
+		height: 360px;
+		width: 470px;
+		border-radius: 50px;
+		border: 4px solid white;
+		background-color: black;
+		-ms-transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
+		transform: rotate(5deg);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	#imagemap {
+		position: absolute;
+		z-index: 0;
+		right: 40px;
+		top: 40px;
+		height: 300px;
+		width: 400px;
+		border-radius: 50px;
+		border: 4px solid white;
+		background-color: black;
+		-ms-transform: rotate(7deg);
+		-webkit-transform: rotate(7deg);
+		transform: rotate(7deg);
+		background-image: url(../images/didmap.jpg);
+	}
+	
+	
+
+	footer {
+		height: 170px;
+		background: -webkit-linear-gradient(#192c3b, #041119);
+		/* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#192c3b, #041119);
+		/* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#192c3b, #041119);
+		/* For Firefox 3.6 to 15 */
+		background: linear-gradient(#192c3b, #041119);
+		/* Standard syntax */
+		text-align: center;
+		color: white;
+	}
+	/*---------------------------------slider--------------------------------*/
+	
+	#socialnetworkpanel iframe {
+		position: relative;
+		z-index: 1;
+		width: 212px;
+		height: 376px;
+		top: -440px;
+		border-radius: 3px;
+		left: 15px;
+		background-color: white;
+	}
+	.slider {
+		max-width: 1050px;
+		width:100%;
+		height: 490px;
+		margin: 0px auto;
+		position: relative;
+	}
+	.slide1, .slide2, .slide3, .slide4, .slide5 {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.slide1 {
+		background: url(../images/slide1.jpg)no-repeat center;
+		background-size: cover;
+		animation: fade 8s infinite;
+		-webkit-animation: fade 8s infinite;
+	}
+	.slide2 {
+		background: url(../images/slide2.jpg)no-repeat center;
+		background-size: cover;
+		animation: fade2 8s infinite;
+		-webkit-animation: fade2 8s infinite;
+	}
+	.slide3 {
+		background: url(../images/slide3.jpg)no-repeat center;
+		background-size: cover;
+		animation: fade3 8s infinite;
+		-webkit-animation: fade3 8s infinite;
+	}
+	@keyframes fade {
+		0% {
+			opacity: 1
+		}
+		33.333% {
+			opacity: 0
+		}
+		66.666% {
+			opacity: 0
+		}
+		100% {
+			opacity: 1
+		}
+	}
+	@keyframes fade2 {
+		0% {
+			opacity: 0
+		}
+		33.333% {
+			opacity: 1
+		}
+		66.666% {
+			opacity: 0
+		}
+		100% {
+			opacity: 0
+		}
+	}
+	@keyframes fade3 {
+		0% {
+			opacity: 0
+		}
+		33.333% {
+			opacity: 0
+		}
+		66.666% {
+			opacity: 1
+		}
+		100% {
+			opacity: 0
+		}
+	}
+
+
+	footer img {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+.mobileonly {
+		display: none;
+	}
+	/*---------------------------------slider--------------------------------*/
+	/*---------------------------------colors--------------------------------
+black blue #263049 grey with transparency
+dark blue #005984
+light blue #4E84C4
+beige #EDD8B9
+
+--------------*/
+	/*---------------------------------jogforms for forfms that work and designed----------------------------------------------*/
+
+@media screen and (max-width:768px) {
+	.designerinfo {
+		padding-top: 5%;
+	}
+	
+	#peoplebar {
+    height: 435px;
+}
+	#tweet{
+	display:none;
+	}
+	#formsbuttons{
+	float:none;
+	}
+	.inputbigger{
+	margin-left:0px;
+	}
+	#forms button{
+	float:none;
+	}
+	#tweettext{
+	padding-top:180px;
+	width:100%;
+	}
+	#socialnetworkpanel{
+	width:50%;
+	}
+	.designerbox{
+	    margin-left: 152px;
+	}
+	
+	.hidemobile {
+			display: none;
+		}
+		.mobileonly {
+			display: inline-block;
+		}
+	
+}
+
+@media screen and (max-width:480px) {
+	#navbar ul li{
+	margin-right:18px;
+	}
+	
+#forms{
+padding:43% 4.3%;
+}
+.bluebig{
+font-size:20px;
+}
+.whitebig{
+font-size:20px;
+}
+#aboutus iframe {
+    top: 140px;
+    height: 270px;
+    width: 340px;
+}
+#peoplebar{
+    height: 775px;
+}	
+#imagemap {
+    top: 180px;
+    height: 250px;
+    width: 330px;
+}
+.designerbox{
+    margin-left: 182px
+}
+.slider{
+height: 340px;
+}
+#infobar {
+    margin-top: 240px;
+    font-size: 30px;
+
+}
+
+
+
+}
+
+
+@media screen and (max-width:320px) {
+	#tweettext{
+	display:none;
+	}
+	
+
+.imagstyle{
+    border: 3px solid white;
+}
+.imagstyle2{
+    border: 3px solid white;
+}
+#navbar ul li {
+    margin-right: 12px;
+
+}
+#logobanner img {
+    width: 100px;
+}
+#logbanner{
+    width: 96px;
+}
+#bookingbar h2 {
+    font-size: 32px;
+}
+.designerbox {
+    margin-left: 94px;
+}
+#forms{
+    padding: 43% 39.3%;
+}
+#forms input {
+    margin-top: 5px;
+}
+.inputsmaller{
+    width: 190px;
+}
+#aboutus  iframe {
+    top: 140px;
+    height: 210px;
+    width: 250px;
+}
+#imagemap {
+    top: 180px;
+    height: 200px;
+    width: 240px;
+}
+.slider{
+height: 220px;
+}
+#infobar {
+    margin-top: 150px;
+    font-size: 20px;
+
+}
+
+
+
+}
+
+
+	.cf:before, .cf:after {
+		content: " ";
+		/* 1 */
+		display: table;
+		/* 2 */
+	}
+	.cf:after {
+		clear: both;
+	}
